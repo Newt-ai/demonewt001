@@ -7,8 +7,8 @@ import pandas as pd
 import streamlit as st
 
 # Show app title and description.
-st.set_page_config(page_title="Support tickets", page_icon="🎫")
-st.title("🎫 Support tickets")
+st.set_page_config(page_title="Holi, stoy aprendiendo Piton", page_icon="🎫")
+st.title("🎫 Holi, stoy aprediendo Pitón")
 st.write(
     """
     This app shows how you can build an internal tool in Streamlit. Here, we are 
@@ -137,7 +137,7 @@ st.header("Statistics")
 # Show metrics side by side using `st.columns` and `st.metric`.
 col1, col2, col3 = st.columns(3)
 num_open_tickets = len(st.session_state.df[st.session_state.df.Status == "Open"])
-col1.metric(label="Number of open tickets", value=num_open_tickets, delta=10)
+col1.metric(label="Number of open tickets", value=num_open_tickets, delta=-15)
 col2.metric(label="First response time (hours)", value=5.2, delta=-1.5)
 col3.metric(label="Average resolution time (hours)", value=16, delta=2)
 
